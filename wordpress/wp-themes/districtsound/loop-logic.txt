@@ -1,0 +1,15 @@
+IF have posts
+
+	WHILE have posts
+
+		Title
+		Content
+		<hr>
+
+	END WHILE
+
+ELSE
+
+	Display 404 Mesage
+
+END IF
