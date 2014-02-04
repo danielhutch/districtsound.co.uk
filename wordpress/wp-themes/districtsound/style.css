@@ -11,5 +11,19 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags:
 
-In depth description
+
 */
+
+
+/* ==========================================================================
+   Typography
+   
+   front-page.php
+   
+   ========================================================================== */
+
+body {
+	font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	color: #FFF;
+	background-color: #000;
+}
