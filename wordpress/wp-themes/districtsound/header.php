@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
-	<head>
-
-		<title>
+<head>	
+	<title>
 			<?php
 				wp_title( '-', true, 'right');
 
 				bloginfo( 'name' );
 			?>
 
-		</title>	
+	</title>	
 		<?php wp_head(); ?>
-	</head>
-	<body>
+</head>
+<body>
 
 <p>This is the header</p>
 
