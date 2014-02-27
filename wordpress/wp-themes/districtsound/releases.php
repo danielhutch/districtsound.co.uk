@@ -8,7 +8,7 @@
 
 get_header(); ?>
 
-<p>This is the releases.php file</p>
+<!-- <p>This is the releases.php file</p> -->
 
 <?php
 
@@ -19,22 +19,31 @@ get_header(); ?>
 	$the_query = new WP_Query( $args );
 
 ?>
+<div class="tile_a">
+	<div class="tile_b">
+		
+			<?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-<?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+			<div class="tile_c">
+				<div class="tile_d">
+					<a href="<?php the_permalink() ;?>"><img src="<?php the_field( 'cover_small' ); ?>"></a>
+					<!-- <h3><a href="<?php the_permalink() ;?>"><?php the_title(); ?></a></h3> -->
+					<div class="releases_info">
+						<h4><?php the_field( 'release_number' ); ?></h4>
+						<h3 class="releases_artist"><?php the_field( 'artist' ); ?></h3>
+						<h3 class="releases_title"><?php the_field( 'title' ); ?></h3>
+						<h4><a href="<?php the_permalink() ;?>">More info</a></h4>
+					</div>
+				</div>
+			</div>
 
-	<h3><a href="<?php the_permalink() ;?>"><?php the_title(); ?></a></h3>
-	<a href="<?php the_permalink() ;?>"><img src="<?php the_field( 'cover_small' ); ?>"></a>
-	<?php the_field( 'release_number' ); ?>
-	<?php the_field( 'artist' ); ?>
-	<?php the_field( 'title' ); ?>
-	<a href="<?php the_permalink() ;?>">More info</a>
-	<hr>
+			<?php endwhile; else: ?>
 
-<?php endwhile; else: ?>
+			<p>There are no posts or pages here</p>
 
-	<p>There are no posts or pages here</p>
-
-<?php endif; ?>
-
+			<?php endif; ?>
+		
+	</div>
+</div>
 
 <?php get_footer(); ?>

@@ -18,7 +18,7 @@ Tags:
 /* ==========================================================================
    Typography
    
-   front-page.php
+ 
    
    ========================================================================== */
 
@@ -27,3 +27,207 @@ body {
 	color: #FFF;
 	background-color: #000;
 }
+
+a{
+	color: #FFF;
+	text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h3{
+	font-size: 1.5em;
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+h4{
+	font-size: 1.125em;
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+
+
+.releases_artist{
+	font-weight: bold;
+}
+
+.releases_title{
+	font-weight: normal;
+	
+}
+
+
+
+/*      Screens Below 600px
+   */
+@media only screen and (max-width: 600px){
+
+  
+}
+
+/*      Screens between 600px and 1000px
+   */
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+
+}
+
+/*      Screens between 1000px and 1400px
+   */
+@media screen and (min-width: 1000px) and (max-width: 1400px){
+
+}
+
+/*      Screens over 1400px
+ */
+@media screen and (min-width: 1400px){
+
+
+}
+
+
+/* ==========================================================================
+   Global
+   
+ 
+   
+   ========================================================================== */
+
+
+	.tile_a{
+		width: 100%;
+		margin: 0px auto;
+	}
+
+	.tile_b{
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+
+	.tile_c{
+		width:33%;
+		float: left;
+	}
+	
+	.tile_d{
+		
+		margin-left: 1em;
+		margin-right: 1em;
+		
+	}
+
+    .tile_d img{
+   	width: 100%
+   }
+
+	.releases_info{
+		margin-top: 1em;
+		margin-bottom: 2em;
+	}
+
+/* ==========================================================================
+   Header
+   
+ 
+   
+   ========================================================================== */
+
+
+   #header{
+   margin-top: 2em;
+   margin-right: 2em;
+   margin-left: 2em;
+   margin-bottom: 4em;
+   }
+
+   #logo{
+   width: 100px;
+   margin-bottom: 1em;
+   }
+
+   #nav{
+   float: right;
+   }
+
+
+   #nav li{
+   display: inline;
+   margin-left: 2em;
+   }
+
+
+   /* ==========================================================================
+   Homepage
+   
+ 
+   
+   ========================================================================== */
+
+  .slides{
+   	background-color: #1a1a1a;
+   	width: 100%
+   }
+
+
+
+
+
+   /* ==========================================================================
+   Releases
+   
+ 
+   
+   ========================================================================== */
+
+   #release{
+   width: 800px;
+   margin: auto;
+   }
+
+   #release img{
+   width: 50%;
+   height: auto;
+   }
+
+
+   /* ==========================================================================
+   Blog, About, Contact
+   
+ 
+   
+   ========================================================================== */
+
+   #article{
+   width: 800px;
+   margin: auto;
+   }
+
+   #article img{
+   width: 100%;
+   height: auto;
+   }
+
+
+   /* ==========================================================================
+   Footer
+   
+ 
+   
+   ========================================================================== */
+
+   #footer{
+   	clear: both;
+   	margin-left: 2em;
+	margin-right: 2em;
+	margin-bottom: 4em;
+	padding-top: 5em;
+   }
+
+
+
+
+
+
+
+

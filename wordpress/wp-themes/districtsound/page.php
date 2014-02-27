@@ -1,18 +1,21 @@
 <?php get_header(); ?>
 
-<p>This is the page.php file</p>
+<div id="article">
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+	<p>This is the page.php file</p>
 
-	<h3><?php the_title(); ?></h3>
-	<?php the_content(); ?>
-	<hr>
+	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<?php endwhile; else: ?>
+		<h3><?php the_title(); ?></h3>
+		<?php the_content(); ?>
+		
 
-	<p>There are no posts or pages here</p>
+	<?php endwhile; else: ?>
 
-<?php endif; ?>
+		<p>There are no posts or pages here</p>
 
+	<?php endif; ?>
+
+</div>
 
 <?php get_footer(); ?>

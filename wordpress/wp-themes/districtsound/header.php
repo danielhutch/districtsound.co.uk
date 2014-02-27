@@ -15,7 +15,13 @@
 </head>
 <body>
 
-<p>This is the header</p>
+<!-- <p>This is the header</p> -->
+
+<div id="header">
+
+<img id="logo" src="<?php bloginfo('template_directory'); ?>/images/ds_logo.svg">
+
+<div id="nav">
 
 <?php
 
@@ -26,3 +32,11 @@
 	wp_nav_menu( $args );
 
 ?>
+
+
+
+</div>
+
+<hr>
+
+</div>
