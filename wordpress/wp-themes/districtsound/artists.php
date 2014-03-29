@@ -27,7 +27,7 @@ get_header(); ?>
 				<a href="<?php the_permalink() ;?>"><img src="<?php the_field( 'artist_shot_small' ); ?>"></a>
 				<div class="releases_info">			
 					<h3><?php the_field( 'artist_name' ); ?></h3>	
-					<a href="<?php the_permalink() ;?>">More info</a>
+					<h4><a href="<?php the_permalink() ;?>">More info</a></h4>
 				</div>
 			</div>
 		</div>
