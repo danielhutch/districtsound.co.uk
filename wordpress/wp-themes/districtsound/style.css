@@ -96,7 +96,7 @@ h4{
    ========================================================================== */
 
 
-         .tile_a{
+      .tile_a{
          width: 100%;
          margin: 0px auto;
       }
@@ -315,10 +315,79 @@ h4{
    
    ========================================================================== */
 
-  .slides{
-   	background-color: #1a1a1a;
-   	width: 100%
+   #feature{
+      background-color: #1a1a1a;
+      margin-left: -3em;
+      margin-right: -3em;
    }
+
+  .slides img{
+   	width: 400px;
+   }
+
+   #twitter-1{
+     width: 100%;
+     margin: 0px auto;
+     padding-top: 1em;
+   }
+
+   #twitter-2{
+      margin-left: 0.75em;
+      margin-top: 1.5em;
+      margin-right: 0.75em;
+   }
+
+   #twitter-3{
+      float: left;
+   }
+
+
+   #twitter-4{
+
+     text-align: center;
+     margin-bottom: 1.5em;
+     margin-left: 0.75em;
+     margin-right: 0.75em;
+
+   }
+
+   /*      Screens Below 600px
+   */
+@media only screen and (max-width: 600px){
+
+#twitter-3{
+  width: 100%;
+}
+  
+}
+
+
+/*      Screens between 600px and 1000px
+   */
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+
+#twitter-3{
+  width: 50%;
+}
+
+
+}
+
+/*      Screens over 1000px and 1400px
+   */
+@media screen and (min-width: 1000px) and (max-width: 1400px){
+
+#twitter-3{
+  width: 50%;
+}
+
+#twitter-4{
+  background-color: #1a1a1a;
+  padding: 2em;
+}
+
+
+}
 
 
 
