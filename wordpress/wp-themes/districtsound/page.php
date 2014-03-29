@@ -2,7 +2,7 @@
 
 <div id="article">
 
-	<p>This is the page.php file</p>
+	<!-- <p>This is the page.php file</p> -->
 
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
