@@ -442,20 +442,37 @@ h4{
 }
 
 
-   /* ==========================================================================
-   Footer
-   
- 
-   
-   ========================================================================== */
+/* ==========================================================================
+Footer
 
-   #footer{
-   	clear: both;
-   	margin-left: 2em;
-	margin-right: 2em;
-	margin-bottom: 4em;
-	padding-top: 5em;
-   }
+
+
+========================================================================== */
+
+#footer{
+	clear: both;
+	margin-left: 2em;
+margin-right: 2em;
+margin-bottom: 4em;
+padding-top: 5em;
+}
+
+.footerlinks{
+display: inline-block;
+width: 33%;
+}
+@media only screen and (max-width: 420px){
+ .footerlinks{
+  width: 100%;
+  }
+}
+@media only screen and (min-width: 420px) and (max-width: 800px){
+ .footerlinks{
+  width: 49%;
+  }
+}
+
+
 
 
 
