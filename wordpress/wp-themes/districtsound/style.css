@@ -400,14 +400,23 @@ h4{
    
    ========================================================================== */
 
-   #release{
-   width: 800px;
-   margin: auto;
+   #releasecover{
+     width: 50%;
+     display: inline-block;
+     float: left;
+     padding-bottom: 3em;
    }
-
-   #release img{
-   width: 50%;
-   height: auto;
+   #releasecoversub{
+    padding-right: 1em;
+   }
+   #releaseinfo{
+     width: 50%;
+     display: inline-block;
+     float: right;
+     padding-bottom: 3em;
+   }
+   #releaseinfosub{
+    padding-left: 1em;
    }
 
 
