@@ -4,29 +4,31 @@
 
 <!-- <p>This is the front-page.php file</p>-->
 <div id="feature">
-		<ul class="slides">
-			<?php
+	<div class="wmuSlider example2">
+			<div class="wmuSliderWrapper">
+				<?php
 
-			$args = array(
-				'post_type' => 'releases'
-			);
+				$args = array(
+					'post_type' => 'releases'
+				);
 
-			$the_query = new WP_Query( $args );
+				$the_query = new WP_Query( $args );
 
-		?>
+			?>
 
-		<?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+			<?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
 
-		<li>
-			<a href="<?php the_permalink() ;?>"><img src="<?php the_field( 'cover_small' ); ?>"></a>
-		</li>
-		<?php endwhile; else: ?>
+			<article>
+				<a href="<?php the_permalink() ;?>"><img class="slideimg" src="<?php the_field( 'cover_small' ); ?>"></a>
+			</article>
+			<?php endwhile; else: ?>
 
-			<p>There are no posts or pages here</p>
+				<p>There are no posts or pages here</p>
 
-		<?php endif; ?>
-		</ul>
+			<?php endif; ?>
+			</div>
+	</div>
 </div>
 
 	<div id='twitter-1' class='clearfix'>
@@ -47,6 +49,17 @@
 		</div>
 	</div>
 
+    <script type="text/javascript" src="wp-content/themes/districtsound/modernizr.custom.min.js"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="wp-content/themes/districtsound/js/jquery.wmuSlider.js"></script>
+    <script src="wp-content/themes/districtsound/js/jquery.wmuGallery.js"></script>
+    <script>
+  
+        $('.example2').wmuSlider({
+            touch: true,
+            animation: 'slide'
+        });   
 
+    </script>
 
 <?php get_footer(); ?>
