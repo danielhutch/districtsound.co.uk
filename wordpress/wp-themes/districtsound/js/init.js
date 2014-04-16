@@ -44,7 +44,6 @@
     });
 
 
-
     /**
      * Home page slider
      *
@@ -54,6 +53,7 @@
       touch: true,
       animation: 'slide'
     });
+
   });
 
 })(jQuery);
