@@ -632,8 +632,5 @@ Slider
     right:0;
     z-index:9999999;
     background:url(images/ds_logo.svg) #000 no-repeat 50% 50%;
-  }
-
-  #splash img {
-
+    background-size:300px 215px;
   }
