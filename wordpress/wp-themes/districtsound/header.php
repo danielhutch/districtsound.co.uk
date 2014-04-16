@@ -13,6 +13,7 @@
 	<!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
   <script src="<?php bloginfo('template_directory'); ?>/js/modernizr.custom.min.js"></script>
   <?php wp_head(); ?>
+  <script src="<?php bloginfo('template_directory'); ?>/js/jquery.cookie.js"></script>
   <script src="<?php bloginfo('template_directory'); ?>/js/jquery.touchSwipe.min.js"></script>
   <script src="<?php bloginfo('template_directory'); ?>/js/jquery.wmuGallery.js"></script>
   <script src="<?php bloginfo('template_directory'); ?>/js/jquery.wmuSlider.js"></script>

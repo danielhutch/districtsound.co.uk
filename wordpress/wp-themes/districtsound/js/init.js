@@ -54,6 +54,23 @@
       animation: 'slide'
     });
 
+
+    /**
+     * Splash
+     * Show splash if not cookied
+     * Cookie lasts for the duration of the browser session
+     *
+     * To test: remove cookie via console with:
+     * jQuery.removeCookie('hasSplashed', {path: '/'});
+     */
+    var $splash = $("#splash");
+    var hasSplashed = $.cookie('hasSplashed');
+    if (hasSplashed) {
+      $splash.hide();
+    } else {
+      $splash.delay(2000).fadeOut(1000);
+      $.cookie('hasSplashed', true, { path: '/' });
+    }
   });
 
 })(jQuery);

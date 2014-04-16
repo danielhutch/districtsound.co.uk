@@ -13,5 +13,7 @@
 			<a href="https://soundcloud.com/districtsounduk">Soundcloud</a><br>
 		</div>
 	</div>
-	</body>
-	</html>
+
+	<div id="splash"></div>
+</body>
+</html>

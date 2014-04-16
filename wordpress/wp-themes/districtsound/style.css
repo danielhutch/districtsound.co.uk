@@ -621,3 +621,19 @@ Slider
 
 }
 
+
+
+/* splash */
+  #splash {
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:9999999;
+    background:url(images/ds_logo.svg) #000 no-repeat 50% 50%;
+  }
+
+  #splash img {
+
+  }
