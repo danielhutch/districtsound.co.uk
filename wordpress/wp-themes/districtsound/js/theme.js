@@ -1,3 +1,3 @@
-jQuery(document).ready(function($)) {
-	$('.flexslider').flexslider();
-}
+jQuery(document).ready(function() {
+	jQuery('.flexslider').flexslider();
+});

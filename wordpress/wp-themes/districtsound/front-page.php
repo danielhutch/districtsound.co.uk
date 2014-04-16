@@ -49,17 +49,4 @@
 		</div>
 	</div>
 
-    <script type="text/javascript" src="wp-content/themes/districtsound/modernizr.custom.min.js"></script>    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-    <script src="wp-content/themes/districtsound/js/jquery.wmuSlider.js"></script>
-    <script src="wp-content/themes/districtsound/js/jquery.wmuGallery.js"></script>
-    <script>
-  
-        $('.example2').wmuSlider({
-            touch: true,
-            animation: 'slide'
-        });   
-
-    </script>
-
 <?php get_footer(); ?>
