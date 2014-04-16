@@ -1,3 +1,5 @@
 jQuery(document).ready(function() {
-	jQuery('.flexslider').flexslider();
+	if (jQuery.flexslider) {
+        jQuery('.flexslider').flexslider();
+    }
 });
