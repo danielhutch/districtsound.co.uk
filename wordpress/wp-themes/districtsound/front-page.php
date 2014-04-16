@@ -9,7 +9,7 @@
 				<?php
 
 				$args = array(
-					'post_type' => 'releases'
+					'post_type' => array('releases','samplers')
 				);
 
 				$the_query = new WP_Query( $args );

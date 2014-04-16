@@ -71,6 +71,31 @@
       $splash.delay(2000).fadeOut(1000);
       $.cookie('hasSplashed', true, { path: '/' });
     }
+
+
+
+    /**
+     * Tabs
+     *
+     */
+    var $tabs = $(".tab");
+    var $tabTriggers = $(".tab-trigger a");
+
+    $tabs.hide();
+    $tabs.first().show();
+
+    $tabTriggers.click(function(e){
+      e.preventDefault();
+      var $trigger = $(this);
+      $tabTriggers.closest(".tab-trigger").removeClass('active');
+
+      $trigger.parent().addClass('active');
+      var currentTab = $trigger.attr('href');
+      $tabs.hide();
+      $(currentTab).show();
+    });
+
+
   });
 
 })(jQuery);

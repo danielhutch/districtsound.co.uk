@@ -95,7 +95,22 @@ h4{
 
    ========================================================================== */
 
+    /* clearfix */
+      .cf:before,
+      .cf:after {
+          content: " ";
+          display: table;
+      }
 
+      .cf:after {
+          clear: both;
+      }
+      .cf {
+          *zoom: 1; /* IE */
+      }
+
+
+    /* tiles */
       .tile_a{
          width: 100%;
          margin: 0px auto;
@@ -634,3 +649,27 @@ Slider
     background:url(images/ds_logo.svg) #000 no-repeat 50% 50%;
     background-size:300px 215px;
   }
+
+
+/* tabs */
+  .tabs {
+    margin:0 2em 4em 2em;
+  }
+    .tabs ul {
+      margin:0;
+      padding:0;
+      border-bottom:1px solid #fff;
+      list-style:none;
+    }
+      .tabs li {
+        display:inline-block;
+        margin-bottom:-1px;
+      }
+        .tabs li.active {
+          border:1px solid #fff;
+          border-bottom-color:#000;
+        }
+          .tabs li a {
+            display:block;
+            padding:10px;
+          }
