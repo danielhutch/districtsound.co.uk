@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>	
+<head>
 	<title>
 			<?php
 				wp_title( '-', true, 'right');
@@ -11,9 +11,16 @@
 	</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
-		<?php wp_head(); ?>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script type="text/javascript" language="javascript" charset="utf-8" src="<?php bloginfo('template_directory'); ?>/menu.js"></script>
+  <script src="<?php bloginfo('template_directory'); ?>/js/modernizr.custom.min.js"></script>
+  <?php wp_head(); ?>
+  <script src="<?php bloginfo('template_directory'); ?>/js/jquery.cookie.js"></script>
+  <script src="<?php bloginfo('template_directory'); ?>/js/jquery.touchSwipe.min.js"></script>
+  <script src="<?php bloginfo('template_directory'); ?>/js/jquery.wmuGallery.js"></script>
+  <script src="<?php bloginfo('template_directory'); ?>/js/jquery.wmuSlider.js"></script>
+  <script src="<?php bloginfo('template_directory'); ?>/js/init.js"></script>
+  <script>
+
+  </script>
 </head>
 <body>
 
@@ -24,13 +31,13 @@
     <div id="nav">
       <ul>
       	<?php wp_nav_menu( array( 'items_wrap' => '%3$s' ) ); ?>
-      	<!--  http://codex.wordpress.org/Function_Reference/wp_nav_menu -->     
+      	<!--  http://codex.wordpress.org/Function_Reference/wp_nav_menu -->
       </ul>
     </div>
-    <a href="#" id="navbtn">Nav Menu</a>        
+    <a href="#" id="navbtn">Nav Menu</a>
      <div id="logo">
     	<a href="<?php echo home_url(); ?>"><img id="logo" src="<?php bloginfo('template_directory'); ?>/images/ds_logo.svg"> </a>
-		</div>	
+		</div>
 
   </header><!-- @end #topnav -->
   <div id="bar">
