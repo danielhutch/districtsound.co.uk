@@ -390,7 +390,7 @@ h4{
 
 /*      Screens over 1000px and 1400px
    */
-@media screen and (min-width: 1000px) and (max-width: 1400px){
+@media screen and (min-width: 1000px) {
 
 #twitter-3{
   width: 50%;
