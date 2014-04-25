@@ -36,7 +36,7 @@ get_header(); ?>
 
 			<div class="tile_c">
 				<div class="tile_d">
-					<a href="<?php the_permalink() ;?>"><img src="<?php the_field( 'cover_small' ); ?>"></a>
+					<a href="<?php the_permalink() ;?>"><img src="<?php the_field( 'cover_large' ); ?>"></a>
 					<!-- <h3><a href="<?php the_permalink() ;?>"><?php the_title(); ?></a></h3> -->
 					<div class="releases_info">
 						<h4><?php the_field( 'release_number' ); ?></h4>
@@ -72,7 +72,7 @@ get_header(); ?>
 
 			<div class="tile_c">
 				<div class="tile_d">
-					<a href="<?php the_permalink() ;?>"><img src="<?php the_field( 'cover_small' ); ?>"></a>
+					<a href="<?php the_permalink() ;?>"><img src="<?php the_field( 'cover_large' ); ?>"></a>
 					<!-- <h3><a href="<?php the_permalink() ;?>"><?php the_title(); ?></a></h3> -->
 					<div class="releases_info">
 						<h4><?php the_field( 'release_number' ); ?></h4>

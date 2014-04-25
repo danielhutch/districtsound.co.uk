@@ -16,7 +16,7 @@
 				<h3 class="releases_artist"><?php the_field( 'artist' ); ?></h3>
 				<h3 class="releases_title"><?php the_field( 'title' ); ?></h3>
 				<p><?php the_field( 'tracks' ); ?></p>
-				<p><a href="<?php the_field( 'buy_digital' ); ?>">Download Release</a><!-- | <a href="<?php the_field( 'buy_vinyl' ); ?>">Vinyl</a>--></p>
+				<p><a href="<?php the_field( 'buy_digital' ); ?>">Buy</a></p>
 			</div>
 		</div>
 		<?php the_field( 'soundcloud_api' ); ?>

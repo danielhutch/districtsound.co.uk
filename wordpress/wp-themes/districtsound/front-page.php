@@ -20,7 +20,7 @@
 
 
 			<article>
-				<a href="<?php the_permalink() ;?>"><img class="slideimg" src="<?php the_field( 'cover_small' ); ?>"></a>
+				<a href="<?php the_permalink() ;?>"><img class="slideimg" src="<?php the_field( 'cover_large' ); ?>"></a>
 			</article>
 			<?php endwhile; else: ?>
 
