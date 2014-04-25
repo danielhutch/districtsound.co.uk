@@ -158,7 +158,7 @@ h4{
 
    /*      Screens between 700px and 1400px
    */
-   @media screen and (min-width: 700px) and (max-width: 1400px){
+   @media screen and (min-width: 700px) {
 
       body{
          padding-left: 3em;
