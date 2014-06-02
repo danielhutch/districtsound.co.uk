@@ -480,7 +480,7 @@ margin-right: 2em;
 margin-bottom: 4em;
 padding-top: 5em;
 }
-
+/*
 .footerlinks{
 display: inline-block;
 width: 33%;
@@ -495,7 +495,27 @@ width: 33%;
   width: 49%;
   }
 }
+*/
 
+.footerlinks{
+  width: 49%;
+  float: left;
+  }
+
+  .elsewhere {
+    float: right;
+    text-align: right;
+    width: 49%;
+    padding: 1em;
+  }
+  
+  .elsewhere img{
+    height: 2em;
+  }
+  
+  .elsewhere a{
+   margin-right: 1em;
+  }
 
 
 
