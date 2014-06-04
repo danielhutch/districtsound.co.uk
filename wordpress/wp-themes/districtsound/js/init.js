@@ -68,7 +68,16 @@
     if (hasSplashed) {
       $splash.hide();
     } else {
-      $splash.delay(2000).fadeOut(1000);
+
+      // set splash to remove on click
+      $splash.on("click", function(){
+        $splash.fadeOut(1000);
+      });
+
+      // set splash to hide automatically after 2 seconds
+      //$splash.delay(2000).fadeOut(1000);
+
+      // set cookie so splash disappears
       $.cookie('hasSplashed', true, { path: '/' });
     }
 
