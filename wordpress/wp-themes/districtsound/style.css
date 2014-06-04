@@ -498,15 +498,14 @@ width: 33%;
 */
 
 .footerlinks{
-  width: 49%;
+  width: 50%;
   float: left;
   }
 
   .elsewhere {
     float: right;
     text-align: right;
-    width: 49%;
-    padding: 1em;
+    width: 50%;
   }
   
   .elsewhere img{
